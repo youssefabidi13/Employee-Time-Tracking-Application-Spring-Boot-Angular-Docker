@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center">
+    <div class="card mt-5">
+      <div class="row">
+        <div class="col-2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiUbnyWqy0yN-_gMGrTYx0FIG8MTdEhLB_frCvIvlN0xwNDREflzVHLhQyfvXb0FzT3Y&usqp=CAU" width="70" class="rounded-circle mt-2">
+        </div>
+        <form [formGroup]="formHumor" (ngSubmit)="handleHumor()">
+          <div class="col-10">
+            <div class="comment-box ml-2">
+              <h4>Add a Humor</h4>
+              <div class="rating">
+                <input type="radio" formControlName="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" formControlName="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" formControlName="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" formControlName="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" formControlName="rating" value="1" id="1"><label for="1">☆</label>
+              </div>
+              <div class="comment-area">
+                <textarea class="form-control" formControlName="humor" placeholder="What is your humor?" rows="4"></textarea>
+              </div>
+              <div class="comment-btns mt-2">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="pull-left">
+                      <button class="btn btn-success btn-sm" routerLink="/workingDay">Cancel</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="pull-right">
+                      <button class="btn btn-success send btn-sm" type="submit">Send <i class="fa fa-long-arrow-right ml-1"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

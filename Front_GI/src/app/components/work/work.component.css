@@ -1,0 +1,33 @@
+/* Sample styling - Adjust as needed */
+.custom-card {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    margin-top: 30px;
+}
+
+.btn-action {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #0056b3;
+}
+
+.no-work-msg {
+    color: #dc3545;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 15px 15px;
+}

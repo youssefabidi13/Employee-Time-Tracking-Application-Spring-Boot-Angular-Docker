@@ -1,0 +1,67 @@
+<!-- <div class="p-3 d-flex align-items-center justify-content-center">
+    <div class="col col-md-6">
+        <div class="card ">
+            <div class="card-header">Authentification</div>
+            <div class="card-body">
+              <form [formGroup]="formLogin" (ngSubmit)="handleLogin()">
+                <div class="mb-3">
+                  <label class="form-label">Username</label>
+                  <input type="text" class="form-control" formControlName="username">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-control" formControlName="password">
+                </div>
+                <button class="btn btn-success">Login</button>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div> -->
+  <style>
+    .momo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    min-height: 100vh;
+}
+
+  </style>
+
+
+
+  <div class="form-body">
+    <div class="website-logo">
+        <a href="index.html">
+            <div class="logo">
+                <img class="logo-size" src="../../../assets/images/logo-light.svg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="momo">
+        <div class="img-holder">
+            <div class="bg"></div>
+            <div class="info-holder">
+                <img src="../../../assets/images/graphic1.svg" alt="">
+            </div>
+        </div>
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Get more things done with Loggin platform.</h3>
+                    <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                    <div class="page-links">
+                        <a href="#" class="active">Login</a>
+                    </div>
+                    <form [formGroup]="formLogin" (ngSubmit)="handleLogin()">
+                        <input class="form-control" type="text" name="username" placeholder="E-mail Address" formControlName="username"required>
+                        <input class="form-control" type="password" name="password" placeholder="Password" formControlName="password"required>
+                        <div class="form-button">
+                            <button id="submit" type="submit" class="ibtn">Login</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

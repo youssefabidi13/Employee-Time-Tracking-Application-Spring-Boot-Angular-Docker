@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-lg-8">
+          <div class="card custom-card">
+              <div class="card-header bg-info text-white">
+                  Ajouter Work
+              </div>
+              <div class="card-body">
+                  <form [formGroup]="workForm">
+                      <div class="form-group">
+                          <label for="date">Date</label>
+                          <input type="date" class="form-control" formControlName="date" [value]="todayDate" readonly>
+                      </div>
+                      <div class="form-group text-center" *ngIf="!isWorkCreated || (isWorkCreated && isWorkStarted); else noWork">
+                        <br>  
+                        <button class="btn btn-action" (click)="toggleWork()">
+                              {{ isWorkStarted ? "End Work" : "Start Work" }}
+                          </button>
+                      </div>
+                      <ng-template #noWork>
+                          <p class="no-work-msg text-center">No work</p>
+                      </ng-template>
+                  </form>
+              </div>
+              <div class="card-footer text-muted text-center">
+                  Your footer content here
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
