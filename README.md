@@ -9,7 +9,8 @@ The application has been developed using the following technologies:
 - Spring Boot
 - Angular
 - JWT
-
+- Docker
+  
 ## Project Steps
 
 The project was developed in the following steps:
