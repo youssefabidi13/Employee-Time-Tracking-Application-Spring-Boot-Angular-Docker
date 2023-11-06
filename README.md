@@ -76,6 +76,4 @@ For more detailed instructions, refer to the documentation provided in the repos
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please create a pull request or open an issue in the repository.
 
-## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
